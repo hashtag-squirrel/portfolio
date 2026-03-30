@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alita Pantea — AI/ML Developer</title>
+  <meta name="description"
+    content="Portfolio of Alita Pantea — AI & ML Developer and Pythonista based in Stockholm, Sweden." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursor-ring"></div>
+
+  <!-- Scroll progress bar -->
+  <div class="scroll-progress" id="scroll-progress"></div>
+
+  <!-- ── NAV ── -->
+  <nav>
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">Alita Pantea</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+
+    <!-- Decorative leaf -->
+    <svg class="leaf-deco" viewBox="0 0 300 400" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M150 380 C150 380 20 260 20 160 C20 80 80 20 150 20 C220 20 280 80 280 160 C280 260 150 380 150 380Z"
+        stroke="#4caf78" stroke-width="1.5" />
+      <line x1="150" y1="20" x2="150" y2="380" stroke="#4caf78" stroke-width="0.8" />
+      <line x1="150" y1="100" x2="60" y2="160" stroke="#4caf78" stroke-width="0.5" />
+      <line x1="150" y1="140" x2="240" y2="190" stroke="#4caf78" stroke-width="0.5" />
+      <line x1="150" y1="190" x2="55" y2="240" stroke="#4caf78" stroke-width="0.5" />
+      <line x1="150" y1="230" x2="245" y2="270" stroke="#4caf78" stroke-width="0.5" />
+      <line x1="150" y1="280" x2="80" y2="310" stroke="#4caf78" stroke-width="0.5" />
+      <line x1="150" y1="310" x2="220" y2="335" stroke="#4caf78" stroke-width="0.5" />
+    </svg>
+
+    <div class="hero-content">
+      <div class="hero-tag">AI &amp; ML Developer · Stockholm, Sweden</div>
+      <h1>Alita<br /><em>Pantea</em></h1>
+      <p class="hero-bio">
+        I build intelligent systems that turn raw data into real decisions.
+        Pythonista at heart, specialising in machine learning, computer vision,
+        and training models that actually work in production.
+      </p>
+      <div class="hero-links">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="https://github.com/hashtag-squirrel" target="_blank" rel="noopener" class="btn btn-outline">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path
+              d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+          </svg>
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/alita-pantea/" target="_blank" rel="noopener" class="btn btn-outline">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path
+              d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+          </svg>
+          LinkedIn
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <section id="about">
+    <div class="wrapper">
+      <div class="section-header fade-up">
+        <span class="section-num">01</span>
+        <h2>About</h2>
+        <div class="section-rule"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-text fade-up">
+          <p>
+            I'm <strong>Alita</strong>, an AI &amp; machine learning developer and Python enthusiast
+            based in Stockholm, Sweden. My focus is on building predictive models, computer vision
+            pipelines, and data-driven systems that solve real problems from hypothesis all the
+            way through to a deployed, working product.
+          </p>
+          <p>
+            I care as much about understanding the business
+            problem as I do about the architecture of the model. I've trained CNNs, built
+            interactive ML dashboards and worked across the full data stack.
+          </p>
+        </div>
+        <div class="about-meta fade-up">
+          <div class="meta-item">
+            <div class="meta-label">Location</div>
+            <div class="meta-value">Stockholm, Sweden 🇸🇪</div>
+          </div>
+          <div class="meta-item">
+            <div class="meta-label">Focus</div>
+            <div class="meta-value">AI &amp; Machine Learning · Python</div>
+          </div>
+          <div class="meta-item">
+            <div class="meta-label">Training</div>
+            <div class="meta-value">Code Institute — Full Stack Development</div>
+          </div>
+          <div class="meta-item">
+            <div class="meta-label">GitHub</div>
+            <div class="meta-value">
+              <a href="https://github.com/hashtag-squirrel" target="_blank" rel="noopener">@hashtag-squirrel</a>
+            </div>
+          </div>
+          <div class="meta-item">
+            <div class="meta-label">LinkedIn</div>
+            <div class="meta-value">
+              <a href="https://www.linkedin.com/in/alita-pantea/" target="_blank" rel="noopener">alita-pantea</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SKILLS ── -->
+  <section id="skills">
+    <div class="wrapper">
+      <div class="section-header fade-up">
+        <span class="section-num">02</span>
+        <h2>Skills</h2>
+        <div class="section-rule"></div>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card fade-up">
+          <span class="skill-icon">🐍</span>
+          <div class="skill-title">Python</div>
+          <p class="skill-desc">My primary language — from scripting to ML pipelines to web backends.</p>
+          <div class="skill-tags">
+            <span class="tag">Python 3</span>
+            <span class="tag">TensorFlow</span>
+            <span class="tag">Keras</span>
+            <span class="tag">Streamlit</span>
+            <span class="tag">Pandas</span>
+            <span class="tag">NumPy</span>
+          </div>
+        </div>
+        <div class="skill-card fade-up">
+          <span class="skill-icon">🌐</span>
+          <div class="skill-title">Web Development</div>
+          <p class="skill-desc">Crafting accessible, semantic, and visually considered frontends.</p>
+          <div class="skill-tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Astro</span>
+          </div>
+        </div>
+        <div class="skill-card fade-up">
+          <span class="skill-icon">🤖</span>
+          <div class="skill-title">Machine Learning</div>
+          <p class="skill-desc">Building and evaluating predictive models using supervised learning.</p>
+          <div class="skill-tags">
+            <span class="tag">CNN</span>
+            <span class="tag">Image Classification</span>
+            <span class="tag">CRISP-DM</span>
+            <span class="tag">Jupyter</span>
+          </div>
+        </div>
+        <div class="skill-card fade-up">
+          <span class="skill-icon">📊</span>
+          <div class="skill-title">Data Visualisation</div>
+          <p class="skill-desc">Turning raw data into readable, actionable visual stories.</p>
+          <div class="skill-tags">
+            <span class="tag">Matplotlib</span>
+            <span class="tag">Seaborn</span>
+            <span class="tag">Plotly</span>
+          </div>
+        </div>
+        <div class="skill-card fade-up">
+          <span class="skill-icon">⚙️</span>
+          <div class="skill-title">MLOps &amp; Deployment</div>
+          <p class="skill-desc">Taking models from notebook to production — versioning, deployment, and monitoring.</p>
+          <div class="skill-tags">
+            <span class="tag">Heroku</span>
+            <span class="tag">Git</span>
+            <span class="tag">GitHub</span>
+            <span class="tag">Jupyter</span>
+            <span class="tag">VS Code</span>
+          </div>
+        </div>
+        <div class="skill-card fade-up">
+          <span class="skill-icon">🧪</span>
+          <div class="skill-title">Scientific Method</div>
+          <p class="skill-desc">Hypothesis-driven development — in code and in models.</p>
+          <div class="skill-tags">
+            <span class="tag">Experimentation</span>
+            <span class="tag">A/B Testing</span>
+            <span class="tag">Model Eval</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ── -->
+  <section id="projects">
+    <div class="wrapper">
+      <div class="section-header fade-up">
+        <span class="section-num">03</span>
+        <h2>Projects</h2>
+        <div class="section-rule"></div>
+      </div>
+
+      <!-- ═══════════════════════════════════════════════════════════════
+           PROJECT CAROUSEL
+           To add a new project: copy one full \ PROJECT SLIDE \ block
+           (everything between the matching BEGIN / END comments below),
+           paste it after the last slide inside .carousel-track, and update:
+             • data-index          — next integer (0, 1, 2 …)
+             • .project-kicker     — category / tech line
+             • <h3>                — project title
+             • .project-desc       — description paragraph
+             • .stat-num / label   — three stats
+             • .tag spans          — tech stack tags
+             • .btn hrefs          — GitHub + live URLs
+             • .project-visual svg — swap in your own illustration
+           The counter, dots, and arrows update automatically.
+      ══════════════════════════════════════════════════════════════════ -->
+      <div class="carousel fade-up" id="project-carousel">
+
+        <!-- Prev / Next arrows -->
+        <button class="carousel-arrow carousel-prev" aria-label="Previous project">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <button class="carousel-arrow carousel-next" aria-label="Next project">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+
+        <!-- Slide track -->
+        <div class="carousel-track">
+
+          <!-- ── BEGIN PROJECT SLIDE 0 ── -->
+          <div class="carousel-slide" data-index="0">
+            <div class="project-card">
+              <div class="project-visual" aria-hidden="true">
+                <div class="ring ring-1"></div>
+                <div class="ring ring-2"></div>
+                <div class="ring ring-3"></div>
+                <svg class="project-illo" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M80 140 C80 140 28 100 28 62 C28 36 52 18 80 18 C108 18 132 36 132 62 C132 100 80 140 80 140Z" stroke="#4caf78" stroke-width="1.2" fill="rgba(76,175,120,0.05)"/>
+                  <line x1="80" y1="18" x2="80" y2="140" stroke="#4caf78" stroke-width="0.8"/>
+                  <line x1="80" y1="44" x2="46" y2="64"   stroke="#4caf78" stroke-width="0.5" opacity="0.7"/>
+                  <line x1="80" y1="62" x2="114" y2="78"  stroke="#4caf78" stroke-width="0.5" opacity="0.7"/>
+                  <line x1="80" y1="82" x2="42"  y2="98"  stroke="#4caf78" stroke-width="0.5" opacity="0.7"/>
+                  <line x1="80" y1="100" x2="118" y2="112" stroke="#4caf78" stroke-width="0.5" opacity="0.7"/>
+                  <circle cx="58"  cy="72"  r="5"   fill="rgba(200,245,154,0.18)" stroke="rgba(200,245,154,0.55)" stroke-width="0.8"/>
+                  <circle cx="50"  cy="90"  r="3.5" fill="rgba(200,245,154,0.18)" stroke="rgba(200,245,154,0.55)" stroke-width="0.8"/>
+                  <circle cx="65"  cy="105" r="4"   fill="rgba(200,245,154,0.18)" stroke="rgba(200,245,154,0.55)" stroke-width="0.8"/>
+                  <circle cx="48"  cy="60"  r="2.5" fill="rgba(200,245,154,0.18)" stroke="rgba(200,245,154,0.55)" stroke-width="0.8"/>
+                  <circle cx="108" cy="48"  r="3" stroke="#4caf78" stroke-width="0.8" fill="rgba(76,175,120,0.12)"/>
+                  <circle cx="116" cy="65"  r="3" stroke="#4caf78" stroke-width="0.8" fill="rgba(76,175,120,0.12)"/>
+                  <circle cx="108" cy="82"  r="3" stroke="#4caf78" stroke-width="0.8" fill="rgba(76,175,120,0.12)"/>
+                  <circle cx="120" cy="56"  r="2" stroke="#4caf78" stroke-width="0.6" fill="rgba(76,175,120,0.08)" opacity="0.7"/>
+                  <circle cx="120" cy="74"  r="2" stroke="#4caf78" stroke-width="0.6" fill="rgba(76,175,120,0.08)" opacity="0.7"/>
+                  <line x1="111" y1="48" x2="117" y2="56" stroke="#4caf78" stroke-width="0.5" opacity="0.4"/>
+                  <line x1="111" y1="48" x2="117" y2="74" stroke="#4caf78" stroke-width="0.5" opacity="0.4"/>
+                  <line x1="119" y1="65" x2="117" y2="56" stroke="#4caf78" stroke-width="0.5" opacity="0.4"/>
+                  <line x1="119" y1="65" x2="117" y2="74" stroke="#4caf78" stroke-width="0.5" opacity="0.4"/>
+                  <line x1="111" y1="82" x2="117" y2="56" stroke="#4caf78" stroke-width="0.5" opacity="0.4"/>
+                  <line x1="111" y1="82" x2="117" y2="74" stroke="#4caf78" stroke-width="0.5" opacity="0.4"/>
+                </svg>
+              </div>
+              <div class="project-info">
+                <div class="project-kicker">Machine Learning · Computer Vision · Python</div>
+                <h3>Mildew Detection<br/>in Cherry Leaves</h3>
+                <p class="project-desc">
+                  A CNN-based binary classifier that detects powdery mildew in cherry leaf images —
+                  trained on a dataset of 4,000+ images using TensorFlow and Keras. Built end-to-end
+                  following the CRISP-DM methodology: from business understanding and data preparation,
+                  through 11 model iterations testing different architectures, optimisers, and activation
+                  functions, to a final model achieving 97% test accuracy. Deployed as an interactive
+                  Streamlit dashboard on Heroku for real use by plantation workers in the field.
+                </p>
+                <div class="project-stats">
+                  <div class="stat-box"><span class="stat-num">97%</span><span class="stat-label">Accuracy</span></div>
+                  <div class="stat-box"><span class="stat-num">4k+</span><span class="stat-label">Images</span></div>
+                  <div class="stat-box"><span class="stat-num">11</span><span class="stat-label">Models Tested</span></div>
+                </div>
+                <div class="project-stack">
+                  <span class="tag">Python</span><span class="tag">TensorFlow</span><span class="tag">Keras</span>
+                  <span class="tag">Streamlit</span><span class="tag">Jupyter</span><span class="tag">Kaggle</span>
+                  <span class="tag">Heroku</span><span class="tag">CRISP-DM</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/hashtag-squirrel/mildew-detection-project" target="_blank" rel="noopener" class="btn btn-outline">View on GitHub</a>
+                  <a href="https://mildew-detection.streamlit.app" target="_blank" rel="noopener" class="btn btn-primary">Live Site →</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ── END PROJECT SLIDE 0 ── -->
+
+          <!-- ── BEGIN PROJECT SLIDE 1 ── -->
+          <div class="carousel-slide" data-index="1">
+            <div class="project-card">
+              <div class="project-visual" aria-hidden="true">
+                <div class="ring ring-1"></div>
+                <div class="ring ring-2"></div>
+                <div class="ring ring-3"></div>
+                <!-- Paw print + Django/DB illustration -->
+                <svg class="project-illo" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Paw pad — large central circle -->
+                  <circle cx="80" cy="92" r="26" stroke="#4caf78" stroke-width="1.2" fill="rgba(76,175,120,0.07)"/>
+                  <!-- Pause bars inside paw pad -->
+                  <rect x="72" y="83" width="6" height="18" rx="2" fill="rgba(76,175,120,0.35)" stroke="#4caf78" stroke-width="0.6"/>
+                  <rect x="82" y="83" width="6" height="18" rx="2" fill="rgba(76,175,120,0.35)" stroke="#4caf78" stroke-width="0.6"/>
+                  <!-- Toe beans -->
+                  <ellipse cx="55" cy="68" rx="9"  ry="11" stroke="#4caf78" stroke-width="1" fill="rgba(76,175,120,0.06)" transform="rotate(-18 55 68)"/>
+                  <ellipse cx="72" cy="59" rx="9"  ry="11" stroke="#4caf78" stroke-width="1" fill="rgba(76,175,120,0.06)" transform="rotate(-6 72 59)"/>
+                  <ellipse cx="90" cy="59" rx="9"  ry="11" stroke="#4caf78" stroke-width="1" fill="rgba(76,175,120,0.06)" transform="rotate(6 90 59)"/>
+                  <ellipse cx="107" cy="68" rx="9" ry="11" stroke="#4caf78" stroke-width="1" fill="rgba(76,175,120,0.06)" transform="rotate(18 107 68)"/>
+                </svg>
+              </div>
+              <div class="project-info">
+                <div class="project-kicker">Full-Stack · Django · Python</div>
+                <h3>Pawse</h3>
+                <p class="project-desc">
+                  A full-stack Django web app — a ground-up remake of the "In The Meowment" HTML/CSS site,
+                  demonstrating progression from static pages to a fully dynamic application. Features
+                  user authentication via django-allauth, a database-backed menu and cat management system,
+                  and full CRUD for adoption applications. Built using Agile methodology across six sprints
+                  with GitHub Issues, Kanban boards, and MoSCoW prioritisation. Deployed on Heroku with
+                  Cloudinary for media storage and PostgreSQL for the database.
+                </p>
+                <div class="project-stats">
+                  <div class="stat-box"><span class="stat-num">6</span><span class="stat-label">Sprints</span></div>
+                  <div class="stat-box"><span class="stat-num">CRUD</span><span class="stat-label">Full UI</span></div>
+                  <div class="stat-box"><span class="stat-num">142</span><span class="stat-label">Commits</span></div>
+                </div>
+                <div class="project-stack">
+                  <span class="tag">Python</span>
+                  <span class="tag">Django</span>
+                  <span class="tag">PostgreSQL</span>
+                  <span class="tag">Bootstrap</span>
+                  <span class="tag">Cloudinary</span>
+                  <span class="tag">Heroku</span>
+                  <span class="tag">Agile</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/hashtag-squirrel/pawse" target="_blank" rel="noopener" class="btn btn-outline">View on GitHub</a>
+                  <a href="https://pawse-j092spqzk-hashtag-squirrels-projects.vercel.app" target="_blank" rel="noopener" class="btn btn-primary">Live Site →</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ── END PROJECT SLIDE 1 ── -->
+
+        </div><!-- /.carousel-track -->
+
+        <!-- Counter + dots -->
+        <div class="carousel-footer">
+          <span class="carousel-counter"><span id="carousel-current">1</span> / <span id="carousel-total">2</span></span>
+          <div class="carousel-dots" id="carousel-dots"></div>
+        </div>
+
+      </div><!-- /.carousel -->
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section id="contact">
+    <div class="wrapper">
+      <div class="contact-inner fade-up">
+        <span class="section-num">04</span>
+        <h2>Let's<br /><em>Connect</em></h2>
+        <p>Whether you have a project in mind, want to talk models and data, or just say hi — my inbox is always open.
+        </p>
+        <div class="contact-links">
+          <a href="https://www.linkedin.com/in/alita-pantea/" target="_blank" rel="noopener"
+            class="btn btn-primary">LinkedIn</a>
+          <a href="https://github.com/hashtag-squirrel" target="_blank" rel="noopener"
+            class="btn btn-outline">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <p>Designed &amp; built — <span>Alita Pantea</span> · Stockholm · 2026</p>
+    <div class="footer-links">
+      <a href="https://github.com/hashtag-squirrel" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/alita-pantea/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </footer>
+  <script src="main.js" defer></script>
+</body>
+
+</html>
